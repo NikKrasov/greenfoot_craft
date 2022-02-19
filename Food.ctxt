@@ -1,3 +1,7 @@
 #BlueJ class context
 comment0.target=Food
-numComments=1
+comment1.params=observable
+comment1.target=Food(IActorObservable)
+comment2.params=
+comment2.target=void\ resourceFound()
+numComments=3

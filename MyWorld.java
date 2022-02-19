@@ -1,6 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.*;
 
-public class MyWorld extends World
+public class MyWorld extends AbstractPageableWorld
 {
     static int hour = 0;
     static int min = 0;
@@ -9,6 +10,8 @@ public class MyWorld extends World
     static int counterWood = 0;
     static int counterBomb = 0; 
     
+    
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -16,7 +19,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 600, 1); 
+        super(1000, 600, 1);
         prepare();
     }
 
@@ -35,29 +38,8 @@ public class MyWorld extends World
         }// время
         showText(hour+":"+min,50,20);
         
-        if(counterFood < 10)
-        {
-            int x = Greenfoot.getRandomNumber(950);
-            int y = Greenfoot.getRandomNumber(550);
-            addObject(new Food(),x,y);
-            counterFood++;
-        }//спавн еды
-        if(counterWood < 10)
-        {
-            int y2 = Greenfoot.getRandomNumber(550);
-            int x2 = Greenfoot.getRandomNumber(950);
-            addObject(new Wood(),x2,y2);
-            counterWood++;
-        }//спавн древесины
-        if( counterBomb < 2)
-        {
-            int y3 = Greenfoot.getRandomNumber(550);
-            int x3 = Greenfoot.getRandomNumber(950);
-            addObject(new Bomb(),x3,y3);
-            counterBomb++;
-        }//спавн бомб
-
     }
+    
     
     /**
      * Prepare the world for the start of the program.
@@ -73,5 +55,8 @@ public class MyWorld extends World
         addObject(tPcraft,30,33);
         TPhelp tPhelp = new TPhelp();
         addObject(tPhelp,970,570);
+        
     }
+    
+    
 }

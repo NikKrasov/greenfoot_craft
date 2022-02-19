@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=PageableActor
+comment0.text=\n\ Write\ a\ description\ of\ class\ PageableActor\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=actor\ x\ y
+comment1.target=PageableActor(greenfoot.Actor,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ PageableActor\n
+comment2.params=
+comment2.target=greenfoot.Actor\ getActor()
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=x\ y
+comment5.target=void\ setLocation(int,\ int)
+numComments=6
