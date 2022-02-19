@@ -1,5 +1,9 @@
 #BlueJ class context
 comment0.target=Bomb
-comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.params=observable
+comment1.target=Bomb(IActorObservable)
+comment2.params=actor
+comment2.target=void\ onActorFound(greenfoot.Actor)
+comment3.params=
+comment3.target=void\ act()
+numComments=4

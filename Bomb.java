@@ -1,12 +1,24 @@
 import greenfoot.*;  
 import java.util.*;
 
-public class Bomb extends Actor
+public class Bomb extends Actor implements IActorObservable
 {
     You y;
     Food f;
     List<You> List = new ArrayList<>(); 
     List<Food>List2 = new ArrayList<>();
+    
+    private IActorObservable observable;
+    
+    public Bomb(IActorObservable observable)
+    {
+        this.observable = observable;
+    }
+
+    public void onActorFound(Actor actor) {
+        this.observable.onActorFound(this);
+    }
+
     public void act()
     {
         List = getObjectsInRange(50, You.class);

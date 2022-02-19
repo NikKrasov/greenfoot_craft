@@ -1,5 +1,13 @@
 #BlueJ class context
 comment0.target=You
-comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.params=objs
+comment1.target=boolean\ isResourceAround(java.util.List)
+comment2.params=resources
+comment2.target=void\ resourceFound(java.util.List)
+comment3.params=
+comment3.target=void\ navigatePage()
+comment4.params=
+comment4.target=void\ navigate()
+comment5.params=
+comment5.target=void\ act()
+numComments=6
